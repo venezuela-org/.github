@@ -1,0 +1,14 @@
+name: Pregunta técnica
+description: Una duda sobre herramientas, flujos o datos
+labels: [pregunta]
+body:
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: La pregunta
+    validations:
+      required: true
+  - type: textarea
+    id: intentado
+    attributes:
+      label: Qué intentaste ya

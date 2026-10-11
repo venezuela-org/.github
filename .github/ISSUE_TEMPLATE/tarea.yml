@@ -1,0 +1,30 @@
+name: Tarea
+description: Una tarea concreta que una persona puede tomar y entregar
+labels: [tarea]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+      description: Una frase. Si cabe más de una tarea, abre más de un issue.
+    validations:
+      required: true
+  - type: textarea
+    id: terminado
+    attributes:
+      label: Definición de terminado
+      description: Cómo sabremos que está listo.
+    validations:
+      required: true
+  - type: dropdown
+    id: linea
+    attributes:
+      label: Línea o espacio
+      options: [A base, B mapa, C agua, D ecosistema, E salud y ánimo, F tierra segura, Laboratorio de Ideas, Organización]
+    validations:
+      required: true
+  - type: input
+    id: horas
+    attributes:
+      label: Horas estimadas
+      placeholder: "2"

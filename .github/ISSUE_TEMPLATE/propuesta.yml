@@ -1,0 +1,35 @@
+name: Propuesta de proyecto
+description: Una idea o ficha que quiere convertirse en repositorio
+labels: [propuesta]
+body:
+  - type: input
+    id: titulo
+    attributes:
+      label: Título provisional
+    validations:
+      required: true
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Pregunta o problema
+    validations:
+      required: true
+  - type: textarea
+    id: datos
+    attributes:
+      label: Datos o fuentes
+      description: Enlace y licencia de cada fuente.
+  - type: textarea
+    id: personas
+    attributes:
+      label: Personas y roles
+      description: Usuarios de GitHub y rol CRediT. Sin datos de contacto.
+    validations:
+      required: true
+  - type: checkboxes
+    id: consentimiento
+    attributes:
+      label: Consentimiento
+      options:
+        - label: Las personas nombradas autorizan aparecer en este issue
+          required: true
